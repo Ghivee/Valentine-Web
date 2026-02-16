@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine 🤍</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="flower-container"></div>
+
+
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="petals"></div>
+
+<div class="slider">
+
+<!-- INTRO -->
+<section class="slide active intro">
+  <h1>Happy Valentine 🤍</h1>
+  <button onclick="nextSlide()">Mulai</button>
+</section>
+
+<!-- SLIDE 1 -->
+<section class="slide">
+  <div class="image-row">
+
+    <div class="slide-photo">
+      <div class="photo-float">
+        <img src="img/s1a.jpg">
+      </div>
+    </div>
+
+    <div class="slide-photo">
+      <div class="photo-float">
+        <img src="img/s1b.jpg">
+      </div>
+    </div>
+
+  </div>
+  <h2 class="type-text">Makasih ya sayang udah selalu mau sama aku</h2>
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide">
+  <div class="image-row">
+
+    <div class="slide-photo">
+      <div class="photo-float">
+        <img src="img/s2a.jpg">
+      </div>
+    </div>
+
+    <div class="slide-photo">
+      <div class="photo-float">
+        <img src="img/s2b.jpg">
+      </div>
+    </div>
+
+  </div>
+  <h2 class="type-text">Senyum kamu manis banget si bikin hatiku meleleh</h2>
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide">
+  <div class="image-row">
+
+    <div class="slide-photo">
+      <div class="photo-float">
+        <img src="img/s3a.jpg">
+      </div>
+    </div>
+
+    <div class="slide-photo">
+      <div class="photo-float">
+        <img src="img/s3b.jpg">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="type-text">Aku harap kita bisa selalu saling cinta selamanya</h2>
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+
+
+<!-- Ya or Tidak -->
+<section class="slide proposal-slide">
+  <div class="proposal-content">
+    <h2 class="typewriter">Will you be my Valentine? 💖</h2>
+
+    <div class="proposal-buttons">
+      <button id="yesBtn" class="love-btn yes">Ya 💘</button>
+      <button id="noBtn" class="love-btn no">Tidak 😢</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- LOVE LETTER -->
+<section class="slide letter-slide">
+
+<div class="letter-wrapper">
+
+  <div class="envelope" onclick="openLetter(this)">
+     <div class="flap"></div>
+     <p class="click-text"></p>
+  </div>
+
+  <div class="paper">
+     <div class="letter-content">
+        <h3>To Kia🤍
+             
+           
+        </h3>
+        <p>
+             
+           
+        Makasih udah selalu ada di hidup aku,
+        setelah semua yang kita jalani dan lewati 
+        aku masih ga nyangka kalo kita udah sampai 
+        sejauh ini ngelewatin semua hambatan yang ada.
+        Aku yakin kita bisa raih impian kita itu dan 
+        kita bakal sukses dimasa depan, semangat sayangg, 
+        I Love You and im always here for you.
+        </p>
+     </div>
+  </div>
+
+  <!-- FOTO DI LUAR PAPER -->
+  <div class="photo photo-left">
+     <img src="img/letter1.jpg">
+  </div>
+
+  <div class="photo photo-right">
+     <img src="img/letter2.jpg">
+  </div>
+
+</div>
+
+</section>
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <h3>Yayyy! 💞</h3>
+    <p>Maaf ya terpaksa soalnya gaboleh nolak hehe</p>
+    <button onclick="goToLetter()">Lanjut 💌</button>
+  </div>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
